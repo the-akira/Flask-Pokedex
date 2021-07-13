@@ -11,7 +11,7 @@ pokemons = json.loads(dados)
 
 @app.route('/')
 def home():
-	return render_template('home.html', pokemons=pokemons)
+    return render_template('home.html', pokemons=pokemons)
 
 if __name__ == '__main__':
-  app.run(debug=True)
+    app.run(debug=True)
