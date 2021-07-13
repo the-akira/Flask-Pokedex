@@ -1,5 +1,7 @@
 # Flask Pokédex
 
+![img](https://raw.githubusercontent.com/the-akira/Flask-Pokedex/master/static/Avatar.png)
+
 Pequena aplicação feita como exemplo para ensinar como fazer Deploy de uma aplicação Flask.
 
 ## Como utilizar a aplicação
