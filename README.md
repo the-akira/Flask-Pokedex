@@ -4,6 +4,10 @@
 
 Pequena aplicação feita como exemplo para ensinar como fazer Deploy de uma aplicação Flask.
 
+Leia o **[Tutorial](https://akiradev.netlify.app/posts/flask-pythonanywhere/)**
+
+---
+
 ## Como utilizar a aplicação
 
 ### Crie um clone do repositório
