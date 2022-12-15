@@ -12,20 +12,15 @@
 <body>
     <!-- Pokédex Header -->
     <div class="header">
-        <a href="https://github.com/the-akira" target="_blank"><i class="fab fa-github fa-3x"></i></a>
-        <a href="https://stackoverflow.com/" target="_blank"><i class="fab fa-stack-overflow fa-3x"></i></a>
-        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-3x"></i></a>
-        <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-square fa-3x"></i></a>
-        <img id="titulo_img" src="../static/pngwing.com.png" alt="logo pokemon titulo" srcset="">
+        <img id="titulo-img" src="{{ url_for('static', filename='pokelogo.png') }}" alt="Pokémon Logo">
     </div>
     
     <!-- Pokédex Container -->
     <div class="container">
-        
         <ul class="pokemons">
             {% for poke in pokemons %}
             <li class="poke-container {{poke['types'][0]}} {{poke['types'][1]}}">
-                <div id="pokebola_icon">
+                <div id="pokebola-icon">
                     <h2 class="id">{{ poke['id'] }}</h2>
                 </div>
                 <h1 class="nome">{{ poke['name'] }}</h1>
@@ -40,6 +35,13 @@
             </li>
             {% endfor %}
         </ul>
+    </div>
+
+    <div class="footer">
+        <a href="https://github.com/MoanaFernanda" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+        <a href="https://stackoverflow.com/" target="_blank"><i class="fab fa-stack-overflow fa-3x"></i></a>
+        <a href="https://twitter.com/akirascientist" target="_blank"><i class="fab fa-twitter fa-3x"></i></a>
+        <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-square fa-3x"></i></a>
     </div>
 </body>
 

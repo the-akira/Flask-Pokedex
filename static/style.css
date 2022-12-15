@@ -5,7 +5,15 @@ body {
 }
 
 .header {
-    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    text-align: center;
+}
+
+.footer {
+    margin-bottom: 35px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -14,14 +22,22 @@ body {
 }
 
 i {
-    color: #999175;
+    color: #3f0163;
     margin-right: 10px;
+}
+
+hr {
+    background-color: black;
+    height: 2px;
+    border: 0;
 }
 
 .container {
     margin: 0 auto;
     max-width: 1180px;
     padding: 1.5rem;
+    padding-top: 0px;
+    padding-bottom: 0px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -31,11 +47,13 @@ i {
     list-style-type: none;
     margin-left: 0;
     margin-top: 0;
+    margin-bottom: 0px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
     grid-template-rows: auto;
     justify-content: space-evenly;
     padding: 19px;
+    padding-top: 0px;
     grid-column-gap: 20px;
     overflow-x: hidden;
 }
@@ -46,26 +64,32 @@ li {
 
 .id {
     display: inline;
+    margin-top: 0px;
     padding: 8px;
     margin-right: 7px;
+    float: right;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
 }
 
-#pokebola_icon {
+#pokebola-icon {
     background-image: url("../static/pokebola.png");
     background-repeat: no-repeat;
-    height: 10vh;
+    height: 8vh;
 }
 
-#titulo_img {
+#titulo-img {
     width: 50%;
-    margin-top: 7%;
-    margin-bottom: 7%;
-    
+    margin-top: 6%;
+    margin-bottom: 6%;
 }
 
 .nome {
     text-align: center;
     font-family: 'Electrolize', sans-serif;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
 .poke-container {
@@ -269,5 +293,21 @@ img {
     .poke-container {
         width: 96%;
         padding: 3.5px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #titulo-img {
+        width: 70%;
+        margin-top: 6%;
+        margin-bottom: 6%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #titulo-img {
+        width: 100%;
+        margin-top: 6%;
+        margin-bottom: 6%;
     }
 }
