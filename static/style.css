@@ -93,7 +93,7 @@ li {
 }
 
 .poke-container {
-    padding: 40px 50px 20px 50px;
+    padding: 15px;
     background-color: #c7e4da;
     margin-bottom: 18px;
     color: black;
@@ -280,6 +280,15 @@ img {
     margin-top: 7.6px;
 }
 
+@media screen and (max-width: 320px) {
+    .poke-container > img {
+        width: 65%;
+    }
+    .nome {
+        font-size: 1.35rem;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .pokemons {
         list-style-type: none;
@@ -291,8 +300,7 @@ img {
     }
 
     .poke-container {
-        width: 96%;
-        padding: 3.5px;
+        padding: 10.5px;
     }
 }
 
