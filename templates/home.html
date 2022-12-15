@@ -16,18 +16,27 @@
         <a href="https://stackoverflow.com/" target="_blank"><i class="fab fa-stack-overflow fa-3x"></i></a>
         <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-3x"></i></a>
         <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-square fa-3x"></i></a>
+        <img id="titulo_img" src="../static/pngwing.com.png" alt="logo pokemon titulo" srcset="">
     </div>
+    
     <!-- Pokédex Container -->
     <div class="container">
+        
         <ul class="pokemons">
             {% for poke in pokemons %}
-            <li class="poke-container">
-                <h2 class="id">{{ poke['id'] }}</h2>
+            <li class="poke-container {{poke['types'][0]}} {{poke['types'][1]}}">
+                <div id="pokebola_icon">
+                    <h2 class="id">{{ poke['id'] }}</h2>
+                </div>
                 <h1 class="nome">{{ poke['name'] }}</h1>
                 <img src="{{ poke['image'] }}">
                 <p class="descricao"><b>Descrição: </b>{{ poke['description'] }}</p>
                 <hr>
-                <p class="tipo"><b>Tipo: </b>{{ poke['types'][0] }}</p>
+                {% if poke['types']|length == 1 %}
+                    <p class="tipo"><b>Tipo: </b>{{ poke['types'][0] }}</p>
+                {% else %}
+                    <p class="tipo"><b>Tipo: </b>{{ poke['types'][0] }} / {{ poke['types'][1] }}</p>
+                {% endif %}
             </li>
             {% endfor %}
         </ul>

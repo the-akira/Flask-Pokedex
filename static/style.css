@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Electrolize&display=swap');
 
 body {
-    background-color: #9c060a;
+    background-color: #e0d1ed;
 }
 
 .header {
@@ -14,7 +14,7 @@ body {
 }
 
 i {
-    color: #c7e4da;
+    color: #999175;
     margin-right: 10px;
 }
 
@@ -46,14 +46,25 @@ li {
 
 .id {
     display: inline;
-    border: 1.3px solid black;
-    padding: 3px;
-    border-radius: 13px;
-    margin-right: 6px;
+    padding: 8px;
+    margin-right: 7px;
+}
+
+#pokebola_icon {
+    background-image: url("../static/pokebola.png");
+    background-repeat: no-repeat;
+    height: 10vh;
+}
+
+#titulo_img {
+    width: 50%;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    
 }
 
 .nome {
-    display: inline;
+    text-align: center;
     font-family: 'Electrolize', sans-serif;
 }
 
@@ -72,6 +83,170 @@ li {
 
 .tipo {
     text-align: center;
+}
+
+.grass {
+    background-color: #31a252;
+}
+
+.fire {
+    background-color: #FF5F29;
+}
+
+.water {
+    background-color: #00aaff;
+}
+
+.bug {
+    background-color: #cde54e;
+}
+
+.normal {
+    background-color: #FFC77D;
+}
+
+.poison {
+    background-color: #F755FA;
+}
+
+.electric {
+    background-color: yellow;
+}
+
+.ground {
+    background-color: #cc9476;
+}
+
+.rock {
+    background-color: #cbdad5;
+}
+
+.dragon {
+    background-color: #aa00ff; 
+}
+
+.fighting {
+    background-color: #fd8d32;
+}
+
+.ghost {
+    background-color: #773d94;
+}
+
+.psychic {
+    background-color: #ff548f;
+}
+
+.ice {
+    background-color: #c5ffe5;
+}
+
+.fairy {
+    background-color: #ff8c94;
+}
+
+.grass.poison {
+    background-image: linear-gradient(to right, #31a252, #F755FA);
+}
+
+.bug.flying {
+    background-image: linear-gradient(to right, #cde54e, #fff9d8);
+}
+
+.normal.flying {
+    background-image: linear-gradient(to right, #FFC77D, #fff9d8);
+}
+
+.bug.poison {
+    background-image: linear-gradient(to right, #cde54e, #F755FA);
+}
+
+.ground.poison {
+    background-image: linear-gradient(to right, #F755FA, #cc9476);
+}
+
+.normal.fairy {
+    background-image: linear-gradient(to right, #FFC77D, #ff8c94);
+}
+
+.poison.flying {
+    background-image: linear-gradient(to right, #F755FA, #fff9d8);
+}
+
+.bug.grass {
+    background-image: linear-gradient(to right, #cde54e, #31a252);
+}
+
+.bug.grass {
+    background-image: linear-gradient(to right, #cde54e, #31a252);
+}
+
+.water.fighting {
+    background-image: linear-gradient(to right, #00aaff, #fd8d32);
+}
+
+.water.poison {
+    background-image: linear-gradient(to right, #00aaff, #F755FA);
+}
+
+.rock.ground {
+    background-image: linear-gradient(to right, #cbdad5, #cc9476);
+}
+
+.water.psychic {
+    background-image: linear-gradient(to right, #00aaff, #ff548f);
+}
+
+.electric.steel {
+    background-image: linear-gradient(to right, yellow, #878286);
+}
+
+.water.ice {
+    background-image: linear-gradient(to right, #00aaff, #c5ffe5);
+}
+
+.ghost.poison {
+    background-image: linear-gradient(to right, #773d94, #F755FA);
+}
+
+.grass.psychic {
+    background-image: linear-gradient(to right, #31a252, #ff548f);
+}
+
+.psychic.fairy {
+    background-image: linear-gradient(to right, #ff548f, #ff8c94);
+}
+
+.ice.psychic {
+    background-image: linear-gradient(to right, #c5ffe5, #ff548f);
+}
+
+.water.flying {
+    background-image: linear-gradient(to right, #00aaff, #fff9d8);
+}
+
+.rock.water {
+    background-image: linear-gradient(to right, #cbdad5, #00aaff);
+}
+
+.rock.flying {
+    background-image: linear-gradient(to right, #cbdad5, #fff9d8);
+}
+
+.ice.flying {
+    background-image: linear-gradient(to right, #c5ffe5, #fff9d8);
+}
+
+.electric.flying {
+    background-image: linear-gradient(to right, yellow, #fff9d8);
+}
+
+.fire.flying {
+    background-image: linear-gradient(to right, #FF5F29, #fff9d8);
+}
+
+.dragon.flying {
+    background-image: linear-gradient(to right, #aa00ff, #fff9d8);
 }
 
 img {
